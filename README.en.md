@@ -4,7 +4,7 @@ Drive a **local** [DeepSeek Harness](https://github.com/deepseek-ai/deepseek-har
 
 This is an independent community `dsh-plugin`. It is **not** affiliated with DeepSeek or Feishu/Lark. Remote messages can drive a local Agent; you own the risk. See [SECURITY.md](./SECURITY.md).
 
-Repo: https://gitee.com/zhbdream/dsh-feishu-bridge  
+Repos: [Gitee](https://gitee.com/zhbdream/dsh-feishu-bridge) · [GitHub](https://github.com/zhbdream/-dsh-feishu-bridge)
 
 Full setup guide (Chinese): **[README.md](./README.md)** · Config: [docs/local-config.md](./docs/local-config.md) · Pin: [COMPAT.md](./COMPAT.md) (`@deepseek-ai/dsh@0.1.0-rc.6`)
 

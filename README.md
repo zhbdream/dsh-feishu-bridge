@@ -68,9 +68,15 @@ npx --yes @deepseek-ai/dsh@0.1.0-rc.6 --version
 
 **从源码（当前推荐）：**
 
+码云：[gitee.com/zhbdream/dsh-feishu-bridge](https://gitee.com/zhbdream/dsh-feishu-bridge) · GitHub：[github.com/zhbdream/-dsh-feishu-bridge](https://github.com/zhbdream/-dsh-feishu-bridge)
+
 ```bash
+# 任选其一
 git clone https://gitee.com/zhbdream/dsh-feishu-bridge.git
-cd dsh-feishu-bridge
+# 或
+git clone https://github.com/zhbdream/-dsh-feishu-bridge.git
+
+cd dsh-feishu-bridge   # GitHub 仓克隆后目录名可能是 -dsh-feishu-bridge
 npm install
 npm run build
 ```

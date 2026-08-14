@@ -46,10 +46,10 @@
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://gitee.com/zhbdream/dsh-feishu-bridge.git"
+    "url": "git+https://github.com/zhbdream/-dsh-feishu-bridge.git"
   },
   "bugs": {
-    "url": "https://gitee.com/zhbdream/dsh-feishu-bridge/issues"
+    "url": "https://github.com/zhbdream/-dsh-feishu-bridge/issues"
   },
   "homepage": "https://gitee.com/zhbdream/dsh-feishu-bridge",
   "engines": {
