@@ -1,0 +1,12 @@
+node_modules/
+dist/
+*.tgz
+.env
+.env.*
+!.env.example
+.DS_Store
+*.log
+
+# Private planning — do not publish
+docs/任务方案.md
+W0-W2.md

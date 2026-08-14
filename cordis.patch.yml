@@ -1,0 +1,17 @@
+# Bundle layer inserted when this package is added via:
+#   dsh plugin --profile <name> add .
+- insert:
+    - id: dsh-feishu-bridge
+      name: dsh-feishu-bridge
+      config:
+        appId: ""
+        appSecret: ""
+        workspace: ""
+        allowOpenIds: []
+        # Agent turn timeout before Feishu reminder (ms)
+        taskTimeoutMs: 600000
+        # Extra deny lists (merged with built-in bash/write/edit/…)
+        denyToolNames: []
+        denyToolPrefixes: []
+        # Unsafe: skip built-in dangerous defaults
+        allowDangerousTools: false

@@ -1,0 +1,75 @@
+{
+  "name": "dsh-feishu-bridge",
+  "version": "0.0.1",
+  "description": "Feishu → local DeepSeek Harness Agent bridge (dsh-plugin)",
+  "type": "module",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "files": [
+    "dist",
+    "cordis.patch.yml",
+    "README.md",
+    "README.en.md",
+    "COMPAT.md",
+    "SECURITY.md",
+    "LICENSE",
+    ".env.example",
+    "docs/local-config.md",
+    "docs/feishu-scopes.md"
+  ],
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsdown",
+    "prepare": "pnpm run build",
+    "typecheck": "tsc -p tsconfig.json --noEmit",
+    "test": "vitest run",
+    "pack:check": "pnpm pack --dry-run"
+  },
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  },
+  "keywords": [
+    "dsh-plugin",
+    "deepseek",
+    "deepseek-harness",
+    "feishu",
+    "lark",
+    "agent"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://gitee.com/zhbdream/dsh-feishu-bridge.git"
+  },
+  "bugs": {
+    "url": "https://gitee.com/zhbdream/dsh-feishu-bridge/issues"
+  },
+  "homepage": "https://gitee.com/zhbdream/dsh-feishu-bridge",
+  "engines": {
+    "node": ">=22"
+  },
+
+  "peerDependencies": {
+    "@deepseek-ai/dsh": "0.1.0-rc.6"
+  },
+  "peerDependenciesMeta": {
+    "@deepseek-ai/dsh": {
+      "optional": true
+    }
+  },
+  "dependencies": {
+    "@larksuiteoapi/node-sdk": "^1.59.0"
+  },
+  "devDependencies": {
+    "tsdown": "^0.15.0",
+    "typescript": "^5.8.0",
+    "vitest": "^4.1.10"
+  }
+}
