@@ -140,6 +140,25 @@ npx --yes @deepseek-ai/dsh@0.1.0-rc.6 --profile feishu-dev
 
 若提示未授权：把回帖里的 `open_id` 写入 `allowOpenIds` / `FEISHU_ALLOW_OPEN_IDS` 后**重启**进程。
 
+## 权限与卸载
+
+**本插件会请求 / 依赖的能力：**
+
+- 飞书：收发单聊文本（长连接事件）；凭证为你自建应用的 App ID / Secret
+- 本机 dsh：创建/复用 Agent、读写你配置的 `workspace`；高危工具默认拒绝（见 [SECURITY.md](./SECURITY.md)）
+- **不会**上传你的代码到第三方；飞书消息只在你的本机桥接进程与飞书之间传递
+
+**关闭 / 卸载：**
+
+```bash
+# 先停掉正在跑的 dsh 进程（Ctrl+C）
+
+# 从 profile 移除本插件
+npx @deepseek-ai/dsh@0.1.0-rc.6 plugin --profile feishu-dev remove dsh-feishu-bridge
+```
+
+同时建议：在飞书开发者后台停用或删除对应自建应用；清空环境变量 / profile 里的 `appSecret`。移除后本插件不再加载，也不会再收飞书事件。
+
 ---
 
 ## MVP 边界
